@@ -1,1 +1,20 @@
+import math
+pi_grego = math.pi
+
+scelta = input("Scegli la figura la quale vuoi che venga cacolato il perimetro:\n")
+if scelta.lower() == "quadrato":
+    lato = float(input("Inserisci la lunghezza del lato del quadrato: "))
+    perimetro = lato*4
+    print(f"Il perimetro del quadrato con laeto {lato} è {perimetro}")
+elif scelta.lower() == "rettangolo":
+    base = float(input("inserisci la base del lato del rettangolo:"))
+    altezza = float(input("inserisci l'altezza del rettangolo:"))
+    perimetro = base*2 + altezza*2
+    print(f"Il perimetro del rettangolo con base {base} e altezza {altezza} è {perimetro}")
+elif scelta.lower() == "cerchio":
+    raggio = float(input("inserisci il raggio del cerchio:"))
+    circonferenza = 2 * math.pi * raggio
+    print(f"La circonferenza del cerchio con raggio {raggio} è {circonferenza}")
+else:
+    print("ERRORE: Figura non riconosciuta.")
 
